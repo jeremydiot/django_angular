@@ -1,0 +1,32 @@
+<DOCTYPE html>
+  <html>
+      <head>
+        <title>{% block title %}{{ site.name }}{% endblock %}</title>
+        <meta charset="utf-8">
+
+        {% block stylesheets %}
+            {% include 'includes/_styles.html' %}
+        {% endblock %}
+
+        {% block extra_stylesheets %}{% endblock %}
+
+      </head>
+      <body>
+        <header>
+          {% block header %}{% endblock %}
+        </header>
+        <main>
+          {% block content %}{% endblock %}
+        </main>
+        <footer>
+          {% block footer %}{% endblock %}
+        </footer>
+
+        {% block javascript %}
+          {% include 'includes/_scripts.html' %}
+        {% endblock %}
+
+        {% block extra_javascript %}{% endblock %}
+
+      </body>
+  </html>

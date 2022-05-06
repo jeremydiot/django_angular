@@ -1,5 +1,6 @@
 # django_angular
 ## requirements
 - python3
-- docker + docker-compose
+- docker
+- docker-compose
 - angular
